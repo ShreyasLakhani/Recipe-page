@@ -203,11 +203,12 @@ span {
     }
     
     .icon-text{
-        width: 70%;
+        width: 90vw;
     }
     
     .image {
-        width: 70%
+        /* border: 2px solid red; */
+        width: 90vw
     }
     
     .image img{
@@ -230,7 +231,8 @@ span {
     }
     
     .time{
-        width: 90%;
+        /* border: 2px solid red; */
+        width: 90vw;
         height: 25vh;
         padding-left: 60px;
         box-shadow: none;
@@ -261,7 +263,6 @@ span {
     .time-4{
         width: 30%;
         display: flex;
-        /* border: 2px solid red; */
     }
     
     .time-1{grid-area: time1;}
