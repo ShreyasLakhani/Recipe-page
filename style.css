@@ -212,7 +212,7 @@ span {
     }
     
     .image img{
-        height: 40vh;
+        height: 35vh;
         width: 90vw;
     }
     
@@ -231,7 +231,6 @@ span {
     }
     
     .time{
-        /* border: 2px solid red; */
         width: 90vw;
         height: 25vh;
         padding-left: 60px;
@@ -245,11 +244,18 @@ span {
     .see-time{
         padding-left: 60px;
         height: 90%;
-        font-size: 12px;    
+        font-size: 12px;   
+        margin-top: -23px; 
+        margin-left: -13px; 
     }
     
     .see-time p{
         width: 14vw;
+    }
+
+    .icon{
+        margin-top: -68px;
+        margin-left: -22px;
     }
     
     ion-icon,
@@ -261,8 +267,9 @@ span {
     .time-2,
     .time-3,
     .time-4{
-        width: 30%;
-        display: flex;
+        /* border: 2px solid red; */
+        width: 25vw;
+        height:8vh;
     }
     
     .time-1{grid-area: time1;}
