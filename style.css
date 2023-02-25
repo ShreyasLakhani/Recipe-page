@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 70vw;
+}
+
+.mid {
+    display: flex;
+    width: 70vw;
+}
+
+.heading-1 {
+    font-family: 'Playfair Display', serif;
+    padding: 0px 0px 0px 100px;
+    
+}
+
+.icon-text {
+    font-family: 'Montserrat', sans-serif;
+    width: 43%;
+    padding: 20px 0px 0px 100px;
+    display: flex;
+}
+
+.text {
+    padding-left: 10px;
+    
+}
+
+.image {
+    width: 70%;
+    padding: 30px 0px 0px 100px;
+}
+
+.image img {
+    width: 70vw;
+    border-radius: 12px;
+}
+
+.time {
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    width: 25%;
+    height: 40vh;
+    margin-top: 50px;
+    margin-right: -220px;
+    position: relative;
+    right: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-1,
+.time-2,
+.time-3,
+.time-4{
+    height: 20%;
+    width: 25vw;
+    display: flex;
+}
+
+ion-icon[name="restaurant"] {
+    font-size: 34px;
+    color: orange;
+}
+
+ion-icon{
+    font-size: 34px;
+    position: relative;
+    left: 150%;
+    top: 70%;
+}
+
+.see-time {
+    width: 35%;
+    height: 15%;
+    padding-left: 60px;
+    position: relative;
+    left: 4%;
+    top: 70%;
+}
+
+.see-time p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first {
+    color: #BDBDBD;
+}
+
+.second {
+    color: orange;
+}
+
+.heading-2,
+.item-1 {
+    font-family: 'Playfair Display', serif;
+    padding: 30px 0px 0px 200px;
+}
+
+.heading-2 {
+    width: 20%;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.method input {
+    width: 21px;
+    height: 21px;
+}
+
+.method {
+    padding-top: 30px;
+}
+
+.method span {
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.method p {
+    width: 25%;
+    padding-bottom: 30px;
+}
+
+span {
+    display: block;
+    width: 50%;
+    margin: -25px 0px 0px 25px;
+}
+
+.instruction {
+    padding: 30px 0px 0px 180px;
+    width: 50%;
+}
+
+.instruction span {
+    width: 65%;
+    font-family: 'Montserrat', sans-serif;
+    margin: -30px 0px 0px 50px;
+}
+
+.instruction p {
+    background-color: #F2994A;
+    color: white;
+    width: 20px;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.source {
+    padding: 50px 0px 0px 220px;
+    width: 50%;
+}
+
+.source a {
+    text-decoration: none;
+    color: #BDBDBD;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottom {
+    opacity: .5;
+    color: #828282;
+    margin-top: 100px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #828282;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .heading-1,
+    .icon-text,
+    .text,
+    .image{        
+        padding-left: 20px;
+    }
+    
+    .heading-1,
+    .text{
+        font-size: 12px;
+    }
+    
+    .icon-text{
+        width: 70%;
+    }
+    
+    .image {
+        width: 70%
+    }
+    
+    .image img{
+        height: 30vh;
+        
+    }
+    
+    .heading-2{
+        margin-left: -170px;
+        width: 45vw;
+    }
+
+    .heading-2 p{
+        width: 33vw;
+    }
+    
+    .mid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .time{
+        width: 90%;
+        height: 25vh;
+        padding-left: 60px;
+        box-shadow: none;
+        display: grid;
+        grid-template-areas: 'time1 time1 time1'
+        'time2 time3 time4' ;
+        
+    }
+    
+    .see-time{
+        padding-left: 60px;
+        height: 90%;
+        font-size: 12px;    
+    }
+    
+    .see-time p{
+        width: 14vw;
+    }
+    
+    ion-icon,
+    ion-icon[name="restaurant"]{
+        font-size: 25px;
+    }
+    
+    .time-1,
+    .time-2,
+    .time-3,
+    .time-4{
+        width: 20%;
+        display: flex;
+    }
+    
+    .time-1{grid-area: time1;}
+    .time-2{grid-area: time2;}
+    .time-3{grid-area: time3;}
+    .time-4{grid-area: time4;}
+    
+    .method{
+        margin-left: -170px;
+    }
+
+    .method span{
+        font-size: 15px;
+        width: 90%;
+    }  
+
+    .instruction p{
+        margin-left: -170px;
+    }
+    
+    .instruction span{
+        margin-left: -120px;
+        width: 80vw;
+    }
+    
+    .source{
+        margin-left: -150px;
+        width: 80vw;
+        font-size: 12px;
+    }
+}
